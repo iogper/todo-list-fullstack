@@ -1,0 +1,15 @@
+$kind: http-request
+name: http://localhost:3000/todos
+description: ""
+url: http://localhost:3000/login
+method: POST
+headers:
+  content-type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "username": "testusr",
+        "password": "myPasswd23"
+    }
+order: 1788529269892
