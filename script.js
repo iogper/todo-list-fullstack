@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://todo-backend-904t.onrender.com';
 
 const authSection = document.getElementById('authSection');
 const todoSection = document.getElementById('todoSection');
