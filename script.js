@@ -158,6 +158,15 @@ async function deleteTodo(id) {
     loadTodos();
 }
 
+async function toggleTodo(id,completed) {
+    await fetch(`${API_URL}/todos/${id}`, {
+        method: 'PUT',
+        headers: authHeaders(),
+        body: JSON.stringify({ completed } )
+    });
+    loadTodos();
+}
+
 
 addBtn.addEventListener('click', async () => {
     const title = todoInput.value.trim();
